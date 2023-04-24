@@ -70,7 +70,7 @@ firebase.auth().onAuthStateChanged((user) => {
                 let handle = "@" + user;
               c = 1;
               
-              if (userId === tweetUserId) {
+              if (userId == tweetUserId) {
                 content +=
                   '<div class="wehh" id= "wehh" onclick="navigateToTweetPage(\'' +
                   tweetid +
