@@ -71,39 +71,41 @@ firebase.auth().onAuthStateChanged((user) => {
               c = 1;
               
               if (userId === tweetUserId) {
-                content += '<div class="wehh" id= "wehh" onclick="navigateToTweetPage(\''+tweetid+'\')" >';
                 content +=
-                "<p>" +
-                "<img id='image' src= '/images/profile.jpg' alt=''>" +
-                user +
-                " " +
-                "<span id= 'handle' >" +
-                handle +
-                "</span>" +
-                "</p>";
+                  '<div class="wehh" id= "wehh" onclick="navigateToTweetPage(\'' +
+                  tweetid +
+                  "')\" >";
+                content +=
+                  "<p>" +
+                  "<img id='image' src= '/images/profile.jpg' alt=''>" +
+                  user +
+                  " " +
+                  "<span id= 'handle' >" +
+                  handle +
+                  "</span>" +
+                  "</p>";
                 content += "<p id='post'>" + tweet + "</p>";
-                console.log(tweet);
-                  content +=
-                    "<p id='icon'>" +
-                    "<i id='click' class='fa fa-comment-o' aria-hidden='true'>" +
-                    "</i>" +
-                    " " +
-                    c +
-                    "<span>" +
-                    "<i id='click' class='fa fa-retweet' aria-hidden='true'>" +
-                    "</i>" +
-                    " " +
-                    c +
-                    "</span>" +
-                    "<span>" +
-                    "<i id='click' class='fa fa-heart-o' aria-hidden='true'>" +
-                    "</i>" +
-                    " " +
-                    c +
-                    "</span>" +
-                    "</p>"
-                    content +="</div>";
-                }
+                content +=
+                  "<p id='icon'>" +
+                  "<i id='click' class='fa fa-comment-o' aria-hidden='true'>" +
+                  "</i>" +
+                  " " +
+                  c +
+                  "<span>" +
+                  "<i id='click' class='fa fa-retweet' aria-hidden='true'>" +
+                  "</i>" +
+                  " " +
+                  c +
+                  "</span>" +
+                  "<span>" +
+                  "<i id='click' class='fa fa-heart-o' aria-hidden='true'>" +
+                  "</i>" +
+                  " " +
+                  c +
+                  "</span>" +
+                  "</p>";
+                content += "</div>";
+              }
                 $("#formContainer").append(content);
               });
             });

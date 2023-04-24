@@ -98,10 +98,39 @@ firebase.auth().onAuthStateChanged((user) => {
                 let commentUserId = commentDoc.data().userId;
                 let commentid = commentDoc.data().commentId;
                 let handle = "@" + user;
+                let c = 1;
 
                 if (userId == commentUserId) {
                   content += '<div class="comment>';
-                  content += "<p>" + comment + "</p>";
+                  content +=
+                    "<p>" +
+                    "<img id='image' src= '/images/profile.jpg' alt=''>" +
+                    user +
+                    " " +
+                    "<span id= 'handle' >" +
+                    handle +
+                    "</span>" +
+                    "</p>";
+                  content += "<p id='post'>" + comment + "</p>";
+                  content +=
+                    "<p id='icon'>" +
+                    "<i id='click' class='fa fa-comment-o' aria-hidden='true'>" +
+                    "</i>" +
+                    " " +
+                    c +
+                    "<span>" +
+                    "<i id='click' class='fa fa-retweet' aria-hidden='true'>" +
+                    "</i>" +
+                    " " +
+                    c +
+                    "</span>" +
+                    "<span>" +
+                    "<i id='click' class='fa fa-heart-o' aria-hidden='true'>" +
+                    "</i>" +
+                    " " +
+                    c +
+                    "</span>" +
+                    "</p>";
                   content += "</div>";
                 }
                 $("#commentContainer").append(content);
