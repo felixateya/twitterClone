@@ -61,14 +61,13 @@ firebase.auth().onAuthStateChanged((user) => {
             .collection("Tweets")
             .get()
             .then((querryTweets) => {
-              let content = " ";
+              let content = "";
 
               querryTweets.forEach((tweetDoc) => {
                 let tweetUserId = tweetDoc.data().userId;
                 let tweet = tweetDoc.data().tweets;
                 let tweetid = tweetDoc.data().tweetId;
                 let handle = "@" + user;
-                c = 1;
 
                 if (userId == tweetUserId) {
                   content +=
@@ -106,8 +105,8 @@ firebase.auth().onAuthStateChanged((user) => {
                     "</p>";
                   content += "</div>";
                 }
-                $("#formContainer").append(content);
               });
+              $("#formContainer").append(content);
             });
         });
       });

@@ -55,8 +55,8 @@ firebase.auth().onAuthStateChanged((user) => {
                     "</p>";
                   content += "</div>";
                 }
-                $("#formContainer").append(content);
               });
+              $("#formContainer").append(content);
               firebase
                 .firestore()
                 .collection("Users")
