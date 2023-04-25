@@ -64,7 +64,7 @@
   flex-direction: column;
 }
 
-.tweet input {
+.tweet input, .all textarea {
   padding: 10px 0;
   margin-left: 20px;
   margin-bottom: 20px;
@@ -80,7 +80,7 @@
   font-weight: 600;
 }
 
-#send {
+#send, #commentSubmit {
   width: 90px;
   margin-left: 77%;
   margin-top: 5%;
@@ -110,7 +110,7 @@
 }
 
 
-#formContainer {
+#formContainer, #commentContainer {
   margin-top: 20px;
   width: 40%;
   display: flex;
@@ -140,7 +140,7 @@
 }
 
 #post {
-  font-size: 7px;
+  font-size: 14px;
   margin-top: 10px;
 }
 

@@ -134,5 +134,5 @@ document.getElementById("forget").onclick = function () {
   }
 };
 
-// document.getElementById("created").onclick = 
-//   window.location.href = "/index.html";
+document.getElementById("created").onclick = window.location.href =
+  "/index.html";
