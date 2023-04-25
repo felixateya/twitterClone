@@ -89,18 +89,15 @@ firebase.auth().onAuthStateChanged((user) => {
                     "<i id='click' class='fa fa-comment-o' aria-hidden='true'>" +
                     "</i>" +
                     " " +
-                    c +
                     "<span>" +
                     "<i id='click' class='fa fa-retweet' aria-hidden='true'>" +
                     "</i>" +
                     " " +
-                    c +
                     "</span>" +
                     "<span>" +
                     "<i id='click' class='fa fa-heart-o' aria-hidden='true'>" +
                     "</i>" +
                     " " +
-                    c +
                     "</span>" +
                     "</p>";
                   content += "</div>";
